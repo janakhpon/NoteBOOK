@@ -1,0 +1,105 @@
+<div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+    <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+        <ul class="navigation__list">
+            <form action="/"  class="nform" method="post">
+                <div class="nform__group">
+                    <input type="text" class="nform__input" placeholder="your plan title" id="name" name="title" required />
+                    <label for="name" class="nform__label">YOUR PLAN TITLE</label>
+                </div>
+
+                <div class="nform__group">
+                    <textarea name="details" placeholder="your plan details" id="" cols="30" rows="10"
+                        class="nform__input"></textarea>
+                    <label for="name" class="nform__label">YOUR PLAN DETAILS TO PERFORM</label>
+                </div>
+
+                <div class="nform__group">
+                    <div class="row">
+                        <button class="btn btn--blue btn--nav" type="submit">
+                            SAV
+                        </button>
+
+                        <button class="btn btn--pink btn--nav" type="reset">
+                            RES
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </ul>
+    </nav>
+</div>
+
+<main>
+    <section class="section-stories">
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="img/video.mp4" type="video/mp4" />
+                <source src="img/video.webm" type="video/webm" />
+                Your browser is not supported!
+            </video>
+        </div>
+
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+                What is your main focus?
+            </h2>
+        </div>
+
+        <div class="grid">
+
+
+
+
+
+
+
+
+
+
+
+{{#each ideas}}
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img" />
+                        <figcaption class="story__caption">Janakh Pon</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                            {{title}}
+                        </h3>
+                        <p>
+                            {{details}}
+                        </p>
+
+                        <div class="row">
+                            <hr>
+                            <a href="#" class="btn-text">&quest;</a>
+                            <label class="toggle">
+                                <form method="post" action="/{{id}}?_method=DELETE">
+                                <input class="toggle-checkbox" type="checkbox" onChange="this.form.submit()"/>
+                                <div class="toggle-switch"></div>
+                                <span class="toggle-label">DONE</span>
+                               </form>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+{{else}}
+<p>No video ideas listed</p>
+{{/each}}
+
+        </div>
+
+
+    </section>
+</main>
