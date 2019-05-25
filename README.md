@@ -2,9 +2,6 @@
   NoteBOOK is a design implementation of NoteXD and aim for personal use only as i dont let it have Oauth Options and account service. Here is a github example demo for [herokudeploy](https://arcane-spire.herokuapp.com/)
 
 
-[![Build Status](https://secure.travis-ci.org/fent/node-ytdl.svg)](https://github.com/janakhpon/NoteBOOK.git)
-[![Dependency Status](https://david-dm.org/fent/node-ytdl.svg)](https://arcane-spire.herokuapp.com/)
-[![codecov](https://codecov.io/gh/fent/node-ytdl/branch/master/graph/badge.svg)](https://arcane-spire.herokuapp.com/)
 
 # Usage
 
