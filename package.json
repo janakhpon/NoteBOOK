@@ -18,7 +18,7 @@
     "express": "^4.15.4",
     "express-handlebars": "^3.0.0",
     "method-override": "^2.3.9",
-    "mongoose": "^4.11.12"
+    "mongoose": "^5.7.5"
   },
   "bugs": {
     "url": "https://github.com/janakhpon/NoteBOOK/issues"
